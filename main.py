@@ -45,12 +45,12 @@ def main(x1, y1, x2, y2):
         # Move {steps} times in the dominant direction
         while steps >= 0:
             if distance_x / distance_y >= 1:
-                # then x is the dominant direction and {remainder} times we need to go {ratio+1} steps in the x direction
+                # then x is the dominant direction and {remainder} times we need to go {ratio} steps in the x direction
                 x += x_direction
                 res.append((x, y))
                 steps -= 1
             else:
-                # then y is the dominant direction and {remainder} times we need to go {ratio+1} steps in the y direction
+                # then y is the dominant direction and {remainder} times we need to go {ratio} steps in the y direction
                 y += y_direction
                 res.append((x, y))
                 steps -= 1
